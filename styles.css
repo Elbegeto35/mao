@@ -404,3 +404,71 @@ footer nav ul li a {
     border-radius: 8px; /* Coins arrondis pour les images */
     margin-bottom: 10px; /* Espacement entre l'image et le texte */
 }
+
+/* Styles globaux */
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Styles pour les grands écrans (ordinateurs de bureau) */
+@media (min-width: 1025px) {
+    /* Styles spécifiques aux grands écrans */
+    header {
+        padding: 20px 0;
+    }
+
+    .hero h1 {
+        font-size: 3rem;
+    }
+
+    .event-card {
+        width: 30%; /* Trois cartes par ligne */
+    }
+}
+
+/* Styles pour les tablettes (de 768px à 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    /* Styles spécifiques aux tablettes */
+    header {
+        padding: 15px 0;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .event-card {
+        width: 45%; /* Deux cartes par ligne */
+    }
+}
+
+/* Styles pour les mobiles (moins de 768px) */
+@media (max-width: 767px) {
+    /* Styles spécifiques aux mobiles */
+    header {
+        padding: 10px 0;
+        text-align: center; /* Centre le texte dans l'en-tête */
+    }
+
+    .hero h1 {
+        font-size: 2rem; /* Taille de texte plus petite pour les mobiles */
+    }
+
+    .event-card {
+        width: 100%; /* Une carte par ligne */
+        margin-bottom: 20px; /* Espacement entre les cartes */
+    }
+
+    .logo {
+        width: 40px; /* Réduit la taille du logo pour les mobiles */
+    }
+
+    nav ul {
+        flex-direction: column; /* Change l'orientation de la navigation */
+        align-items: center; /* Centre les éléments de navigation */
+    }
+
+    nav ul li {
+        margin: 5px 0; /* Réduit l'espacement entre les éléments de navigation */
+    }
+}
