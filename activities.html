@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Médi'Arts ON - Activités</title>
+    <link rel="stylesheet" href="activities.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- En-tête de page avec logo et navigation -->
+    <header>
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="activities.html">Activités</a></li>
+                    <li><a href="membership.html">Adhésion</a></li>
+                    <li><a href="team.html">Équipe</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Section Héro avec effet parallax -->
+        <section class="hero parallax" style="background-image: url('banner3mao.jpg');">
+            <div class="hero-content">
+                <h2>Explorez Nos Activités</h2>
+                <p>Participez à des ateliers enrichissants et à des événements passionnants !</p>
+                <a href="membership.html" class="cta-button">Rejoignez-Nous</a>
+            </div>
+        </section>
+
+        <!-- Section Activités en carte avec animation de survol -->
+        <section class="activities">
+            <div class="container">
+                <h2>Nos Activités</h2>
+                <div class="activity-grid">
+                    <!-- Carte activité 1 -->
+                    <article class="activity-card">
+                        <figure>
+                            <img src="atelier-peinture.jpg" alt="Atelier de peinture" loading="lazy">
+                        </figure>
+                        <h3>Atelier de Peinture</h3>
+                        <p>Un espace pour libérer votre créativité avec des peintres professionnels.</p>
+                        <p><strong>Date :</strong> 15 novembre 2024</p>
+                        <a href="atelier.html" class="cta-button">Voir Détails</a>
+                    </article>
+                    <!-- Carte activité 2 -->
+                    <article class="activity-card">
+                        <figure>
+                            <img src="atelier-musique.jpg" alt="Atelier de musique" loading="lazy">
+                        </figure>
+                        <h3>Atelier de Musique</h3>
+                        <p>Initiez-vous à la musique et développez vos compétences avec des experts.</p>
+                        <p><strong>Date :</strong> 10 septembre 2024</p>
+                        <a href="musique.html" class="cta-button">Voir Détails</a>
+                    </article>
+                    <!-- Carte activité 3 -->
+                    <article class="activity-card">
+                        <figure>
+                            <img src="exposition-art.jpg" alt="Exposition d'art" loading="lazy">
+                        </figure>
+                        <h3>Exposition d'Art</h3>
+                        <p>Découvrez les œuvres des jeunes artistes locaux lors de notre exposition.</p>
+                        <p><strong>Date :</strong> 5 octobre 2024</p>
+                        <a href="exposition.html" class="cta-button">Voir Détails</a>
+                    </article>
+                    <!-- Carte activité 4 -->
+                    <article class="activity-card">
+                        <figure>
+                            <img src="festival-theatre.jpg" alt="Festival de théâtre" loading="lazy">
+                        </figure>
+                        <h3>Festival de Théâtre</h3>
+                        <p>Assistez à des performances qui mettent en avant le talent des jeunes.</p>
+                        <p><strong>Date :</strong> 30 novembre 2024</p>
+                        <a href="theatre.html" class="cta-button">Voir Détails</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Témoignages -->
+        <section class="testimonials">
+            <div class="container">
+                <h2>Témoignages</h2>
+                <blockquote>
+                    <p>"Participer aux activités de Médi'Arts ON m'a permis de rencontrer des gens formidables et de développer mes talents!"</p>
+                    <footer>- Lucas, membre depuis 2025</footer>
+                </blockquote>
+            </div>
+        </section>
+
+        <!-- Section Galerie avec effet de zoom sur images -->
+        <section class="gallery">
+            <div class="container">
+                <h2>Galerie des Activités</h2>
+                <div class="gallery-items">
+                    <a href="activite1.jpg" class="lightbox"><img src="activite1.jpg" alt="Activité 1" loading="lazy"></a>
+                    <a href="activite2.jpg" class="lightbox"><img src="activite2.jpg" alt="Activité 2" loading="lazy"></a>
+                    <a href="activite3.jpg" class="lightbox"><img src="activite3.jpg" alt="Activité 3" loading="lazy"></a>
+                    <a href="activite4.jpg" class="lightbox"><img src="activite4.jpg" alt="Activité 4" loading="lazy"></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Vidéos -->
+        <section class="video-section">
+            <div class="container">
+                <h3>Nos Vidéos</h3>
+                <div class="video-grid">
+                    <iframe src="https://youtu.be/6UkJAtEuNVo?si=JEdpseAhfGBCBNXP" allowfullscreen></iframe>
+                    <iframe src="https://youtu.be/LyDJTp4nS3w?si=wFIY9hgr65biSZ49" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Audio avec lecteur audio intégré -->
+        <section class="audio-section">
+            <div class="container">
+                <h3>Écoutez Nos Podcasts</h3>
+                <div class="podcasts">
+                    <audio controls>
+                        <source src="podcast1.mp3" type="audio/mpeg">
+                        Votre navigateur ne supporte pas l'élément audio.
+                    </audio>
+                    <audio controls>
+                        <source src="podcast2.mp3" type="audio/mpeg">
+                        Votre navigateur ne supporte pas l'élément audio.
+                    </audio>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Pied de page avec liens, réseaux sociaux et newsletter -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Médi'Arts ON. Tous droits réservés.</p>
+            <nav>
+                <ul>
+                    <li><a href="privacy.html">Politique de confidentialité</a></li>
+                    <li><a href="terms.html">Conditions d'utilisation</a></li>
+                </ul>
+            </nav>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/asso_mao/"><img src="insta.png" alt="Instagram"></a>
+                <a href="https://x.com/AssoMediartson"><img src="twiter.png" alt="Twitter"></a>
+            </div>
+            <div class="newsletter">
+                <h3>Inscrivez-vous à notre newsletter</h3>
+                <form action="newsletter_signup.html" method="post">
+                    <input type="email" name="email" placeholder="Votre e-mail" required>
+                    <button type="submit">S'abonner</button>
+                </form>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,406 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* =========================
+   Styles Globaux
+========================= */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+/* Conteneur principal */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* =========================
+   Styles de l'En-tête
+========================= */
+header {
+    background: #343a40;
+    color: #fff;
+    padding: 20px 0;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center; /* Centre le logo verticalement */
+    transition: background-color 0.3s, transform 0.3s; /* Transition pour effet de fond */
+}
+
+.logo {
+    width: 50px; /* Ajustez la taille selon vos besoins */
+    height: auto; /* Maintient le rapport d'aspect */
+    margin-left: 20px; /* Espacement à gauche du logo */
+    transition: transform 0.3s; /* Transition pour le zoom */
+}
+
+.logo-container:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Change la couleur de fond au survol */
+    border-radius: 5px; /* Coins arrondis pour l'effet de fond */
+}
+
+.logo-container:hover .logo {
+    transform: scale(1.1); /* Zoom sur le logo au survol */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+nav ul li a::after {
+    content: '';
+    display: block;
+    height: 2px;
+    background: #5a67d8;
+    width: 0;
+    transition: width 0.3s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+/* =========================
+   Styles de la Section Héros
+========================= */
+.hero {
+    background: linear-gradient(135deg, #5a67d8, #4c51bf);
+    color: white;
+    padding: 100px 20px; /* Ajout d'un padding supérieur pour plus d'espace */
+    text-align: center;
+    border-bottom: 5px solid #5a67d8;
+}
+
+.hero-content {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 30px; /* Augmentation de l'espace autour du contenu */
+    border-radius: 10px;
+    display: inline-block;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Ombre portée plus prononcée */
+}
+
+.hero h1 {
+    font-size: 2.5rem; /* Augmentation de la taille du titre */
+    margin-bottom: 20px; /* Espacement sous le titre */
+}
+
+.hero p {
+    font-size: 1.2rem; /* Augmentation de la taille du texte */
+    max-width: 800px; /* Limite de largeur pour le texte */
+    margin: 0 auto 20px; /* Centrage et espacement sous le texte */
+}
+
+.cta-button {
+    background-color: #5a67d8;
+    color: white;
+    padding: 12px 24px; /* Espacement accru pour un bouton plus "épais" */
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.1rem; /* Taille du texte du bouton */
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #4c51bf;
+    transform: scale(1.05); /* Effet de zoom sur survol */
+}
+
+/* =========================
+   Styles des Sections
+========================= */
+.our-history,
+.mao,
+.our-commitment,
+.upcoming-events,
+.past-events,
+.gallery,
+.testimonials,
+.announcement {
+    padding: 40px 20px;
+    background-color: white; /* Couleur de fond blanche pour toutes les sections */
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px 0; /* Marges entre les sections */
+}
+
+/* =========================
+   Styles de la Section MAO
+========================= */
+.mao {
+    text-align: center;
+}
+
+.mao h2 {
+    color: #4c51bf; /* Couleur de titre */
+    margin-bottom: 15px;
+    font-size: 2rem;
+}
+
+.mao p {
+    max-width: 800px;
+    margin: 10px auto;
+    line-height: 1.6;
+}
+
+/* =========================
+   Styles de Notre Histoire
+========================= */
+.our-history {
+    text-align: center;
+}
+
+.our-history h2 {
+    color: #4c51bf; /* Couleur de titre */
+    margin-bottom: 15px;
+    font-size: 2rem;
+}
+
+/* =========================
+   Styles d'Engagement
+========================= */
+.our-commitment {
+    text-align: center;
+}
+
+.our-commitment h2 {
+    color: #5a67d8;
+    margin-bottom: 15px;
+    font-size: 2rem;
+}
+
+/* =========================
+   Styles des Événements à Venir
+========================= */
+.upcoming-events {
+    text-align: center;
+}
+
+.event-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Espace entre les cartes d'événements */
+}
+
+.event-card {
+    background-color: #fff;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    max-width: 300px; /* Largeur maximale des cartes */
+    flex: 1 1 300px; /* Mise en page réactive */
+    transition: transform 0.3s;
+}
+
+.event-card:hover {
+    transform: translateY(-5px);
+}
+
+.event-card h3 {
+    color: #5a67d8;
+}
+
+.event-card p {
+    margin: 5px 0;
+}
+
+/* =========================
+   Styles de la Galerie
+========================= */
+.gallery {
+    padding: 40px 0;
+}
+
+.gallery-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.gallery img,
+.gallery video {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.gallery img:hover,
+.gallery video:hover {
+    transform: scale(1.05);
+}
+
+/* =========================
+   Styles des Témoignages
+========================= */
+.testimonials {
+    background-color: #f1f1f1;
+    text-align: center;
+}
+
+blockquote {
+    font-style: italic;
+    margin: 0;
+}
+
+/* =========================
+   Styles des Annonces
+========================= */
+.announcement {
+    background: #f9f9f9;
+    padding: 20px;
+    margin: 20px 0;
+    border: 1px solid #e67e22;
+    text-align: center;
+    border-radius: 8px;
+}
+
+/* =========================
+   Styles du Pied de Page
+========================= */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #343a40;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer nav ul {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+footer nav ul li {
+    margin: 0 15px;
+}
+
+footer nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* =========================
+   Styles des Icônes Sociales
+========================= */
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.social-icons img {
+    width: 24px;
+    height: 24px;
+    filter: brightness(0) invert(1);
+    transition: transform 0.3s;
+}
+
+.social-icons img:hover {
+    transform: scale(1.2);
+}
+
+/* =========================
+   Styles de la Newsletter
+========================= */
+.newsletter {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #4c51bf;
+    border-radius: 8px;
+    color: white;
+    text-align: center;
+}
+
+.newsletter h3 {
+    margin: 0 0 10px;
+}
+
+.newsletter form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.newsletter input[type="email"] {
+    padding: 10px;
+    border-radius: 5px 0 0 5px;
+    border: none;
+    outline: none;
+}
+
+.newsletter button {
+    padding: 10px 20px;
+    border-radius: 0 5px 5px 0;
+    border: none;
+    background-color: #5a67d8;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.newsletter button:hover {
+    background-color: #4c51bf;
+    transform: scale(1.05);
+}
+
+/* =========================
+   Styles des Événements Passés
+========================= */
+.past-events {
+    padding: 40px 0;
+    background-color: #f9f9f9; /* Couleur de fond pour la section */
+}
+
+.past-events h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.event-card img {
+    width: 100%; /* Assurez-vous que l'image s'adapte à la largeur de la carte */
+    height: auto; /* Maintenir les proportions de l'image */
+    border-radius: 8px; /* Coins arrondis pour les images */
+    margin-bottom: 10px; /* Espacement entre l'image et le texte */
+}
